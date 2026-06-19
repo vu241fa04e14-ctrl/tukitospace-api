@@ -16,13 +16,11 @@ connectDB();
 ========================= */
 app.use(
   cors({
-    origin:
-      "https://taskmanager-zenx-pu7hm4o33-vu241fa04e14-gmailcoms-projects.vercel.app",
+    origin: "https://taskmanager-zenx.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
-
 // Handle preflight requests
 
 /* =========================
