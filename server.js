@@ -16,7 +16,10 @@ connectDB();
 ========================= */
 app.use(
   cors({
-    origin: "https://taskmanager-zenx.vercel.app",
+    origin: [
+      "https://tukitospace-ui.vercel.app",
+      "https://taskmanager-zenx.vercel.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
